@@ -1,0 +1,167 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+   background-color: #0C192C;
+   min-height: 100%;
+}
+.container{
+    display: flex;
+    position: absolute;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+   
+}
+.bubbles{
+    display: flex;
+    position: relative;
+
+}
+.bubbles span{
+    padding: 45px;
+    position: relative;
+    width: 30px;
+    height: 30px;
+    background-color: #27a7b3;
+    margin: 0 4px;
+    border-radius: 50%;
+    box-shadow: 0 0 0 10px #4fc3dc33,
+                0 0 50px #4fc3dc,
+                0 0 100px #4fc3dc;
+    animation: animate 15s linear infinite;
+    animation-duration: calc(180s / var(--i));
+               
+}
+.bubbles span:nth-child(even){
+    background: #ff2d75;
+    box-shadow: 0 0 0 10px #ff2d7544,
+                0 0 50px #ff2d75,
+                0 0 100px #ff2d75;
+}
+
+@keyframes animate{
+    0%{
+        transform: translateY(200vh) scale(0);
+    }
+    50%{
+        transform: translateY(100vh) scale(0.5);
+    }
+    100%{
+        transform: translateY(10vh) scale(1);
+    }
+}
+.con{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    overflow: hidden;
+    margin-top: 30px; 
+}
+.con span{
+    width: 160px;
+    height: 60px;
+    margin: 2px 15px;
+    font-weight: bold;
+    font-weight: 3rem;
+    border-radius: 30px;
+    box-shadow: 10px 4px 50px 5px #f542ec;   
+}
+.con h3{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    padding-top: 15px;
+    color: white;
+}
+.con span:hover{
+    box-shadow: 10px 4px 50px 5px #27a7b3;
+}
+.pokebox{
+    padding: 20px;
+    margin: 0px;
+    display: grid; 
+    grid-template-columns:  repeat(8, 1fr);
+    
+    
+}
+
+
+#pokedex {
+    display: flex;
+
+}
+.card {
+    display: flex;
+    list-style: none;
+    text-align: center;
+    justify-content: center;
+    width: 260px;
+    height: 320px;
+    border: 2px solid red;
+    border-radius: 60px 10px;
+    margin: 12px 18px;
+    background: linear-gradient(120deg,#833ab4,#fd1d1d,#fcb045);
+}
+.card-image{
+    width: 120px;
+    height: 180px;
+    position: absolute;
+    border-radius: 20px;
+    padding-top: 10px;
+}
+.card-title{
+    text-transform: capitalize;
+    display: flex;
+    position: absolute;
+    justify-content: center;
+    align-items: center;
+    margin-top: 200px;
+    font-size: 2rem
+}
+.card-subtitle{
+    display: flex;
+    position: absolute;
+    justify-content: center;
+    align-items: center;
+    margin-top: 240px;
+    font-size: 2rem;  
+}
+.inputline{
+    display: flex;
+    margin-top: 200px;
+    position: absolute;    
+}
+input{
+    margin-left: 50px;
+    width: 250px;
+    height: 50px;
+    border-radius: 30px;
+    box-shadow: 10px 4px 50px 5px #f542ec;
+    font-style: italic;
+    font-size: 25px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    
+    
+}
+input:hover{
+    transform: scale(1.0) translate(1%, 1%);
+    box-shadow: 10px 4px 50px 5px #27a7b3;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
